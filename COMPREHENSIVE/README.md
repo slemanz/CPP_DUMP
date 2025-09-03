@@ -110,4 +110,18 @@ least significant bit (LSB), which has the lowest value.
 Hexadecimal
 - BASE 16: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
 
+### First program
+
+To compile the **[first program](first_program.cpp)** uses:
+
+```bash
+g++ -o run first_program.cpp
+```
+
+Then, run the code:
+
+```bash
+./run
+```
+
 
