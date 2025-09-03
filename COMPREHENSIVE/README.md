@@ -29,5 +29,20 @@ Section 2
 - Essential Data structures and Algorithm concepts
 - Algorithm Analysis and Algorithmic Design Strategies
 
+### Why do we use C++?
+
+C++ is a very useful language for teaching important computer science topics.
+
+Although it can be considered a fairly "High-Level Language" it allows for a
+slightly lower level programming experience if desired. It is not necessarily an
+Object Oriented Programming language like Java, but we can still do Object
+Oriented Programming in C++.
+
+Because you can have a more fine-grained level of control with C++, it is often
+used for Engineering applications that require precision and speed.
+
+However, it will also set you up to pick up other programming languages very
+quickly.
+
 ### Intro Computer Science
 
