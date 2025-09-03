@@ -86,5 +86,28 @@ Obs: this is a very high-level overview
 
 ### Bits and Bytes
 
+Bit
+- a binary digit (1 - 0)
+- The smallest increment of data on a computer
+
+Byte
+- 4 bits are called a nibble
+- 8 bits form a byte
+- bytes are used to represent data
+
+Bigger picture
+- 1 Byte = 8 bits
+- 1 KB (kilobyte) = 1024 Bytes
+- 1 MB (megabyte) = 1,048,576 Bytes
+- 1 GB (gigabyte) = 1.073.741.824 Bytes
+- 1 TB (terabyte) = 1.099.511.627.776 Bytes
+
+Bit significance refers to the importance or weight of an individual bit within
+a binary number or data set, with the most significant bit (MSB) having the
+highest positional value and a greater impact on the overall quantity than the
+least significant bit (LSB), which has the lowest value.
+
+Hexadecimal
+- BASE 16: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
 
 
