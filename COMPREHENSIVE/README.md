@@ -46,3 +46,45 @@ quickly.
 
 ### Intro Computer Science
 
+Computers have come a long way....
+
+So have computer programming languages...
+
+But they still rely on the same fundamentals.
+
+Whatever code you end up writing, it all needs to be turned into a series of
+ones and zeros for the computer to understand it.
+
+The ones and zeros are referred to as the "Binary" number system.
+- Ex: 100110101
+
+So all of the computer code that we write will need to be translated into this
+binary number system, before the computer can run the code (we also refer to
+these ones and zeros as machine code and/or "bits").
+
+But don't worry...
+
+We don't actually have to do the translation. Luckily, we can just type a small
+command or just click a button, and it will get translated automatically.
+
+This is thanks to the work of other people who made these systems that will make
+our lives much easier.
+
+Let's take a look at what a computer program is and how it goes from someone
+writing the code to the computer running the code
+
+```
+┌─────────────────┐    ┌──────────────────────┐    ┌──────────────────────┐
+| Computer code   |    | Code gets Translated |    | Computer can now run |
+| written here in |───>| into                 |───>| the code that has    |
+| this file       |    | machine code         |    | been translated      |
+└─────────────────┘    └──────────────────────┘    └──────────────────────┘
+    my_code.cpp         Compiler or Interpreter
+```
+
+Obs: this is a very high-level overview
+
+### Bits and Bytes
+
+
+
