@@ -156,3 +156,53 @@ char myletter = 'a';
 - integer variables can only hold whole numbers
 - unsigned integers will hold only a positive whole number
 - signed integers can hold either a positive whole number or a negative one
+
+**FLOAT:**
+
+- it is used to define variables that can hold real numbers
+- float is considered single precision
+- there are no unsigned floating-point data types
+- can store positive or negative numbers
+- can hold up to 7 decimal places
+
+Size: 4 bytes
+
+ex:
+
+```cpp
+float value = 10.10;
+```
+
+**DOUBLE:**
+
+- it is used to define variables that can hold real numbers
+- double data type is considered double precision
+- this is still considered a floating point data type
+- there are no unsigned floating-point data types
+- can store positive or negative numbers
+- can hold up to 15 decimal places
+
+Size: 8 bytes
+
+ex:
+
+```cpp
+double value = 10.1010101010;
+```
+
+### DISCLAIMER
+
+Depending on your operating system, the sizes and ranges may be different.
+
+WHAT TO DO?!
+
+Use the c++ operator sizeof() to find the size that a variable occupies in
+memory on your own system.
+
+ex: if we have an int variable called value, we will demonstrate how to find
+it's size using sizeof()
+
+```cpp
+int value = 10;
+cout << sizeof(value); //this will print the number of bytes that value occupies in memory
+```
