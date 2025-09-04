@@ -68,3 +68,60 @@ that variable.
 
 So, if you plan to use a variable, you must define it above the code lines that
 are trying to use it.
+
+### Variable types
+
+There are two types of variables we will be talking about for today's lecture:
+
+- Normal variables - where the value stored in the variable can change
+- Constant variables - where the value stored in the variable doesn't change
+
+#### CONSTANT VARIABLE
+
+A constant variable must be defined and initialized at the same time.
+Therefore, you must know the value you are to store in it before defining it.
+
+Name your constant variables all uppercase.
+
+Ex:
+
+```cpp
+const int VALUE = 10;
+```
+
+### Data Types
+
+Aaand because apples and oranges can't be added together, types were invented.
+
+1. Types tell the variables what type of data they can hold.
+2. A variable of a type is reserved space in memory.
+3. Each type occupies a different memory size.
+
+Primitive and Non-Primitive
+
+Primitive (Built in):
+| Type Name | Reserved keyword | Size |
+|---|---|---|
+| Boolean               | bool      | 1 byte (8 bits) |
+| Character             | char      | 1 byte (8 bits) |
+| Integer               | int       | 4 bytes (32 bits) |
+| Floating              | float     | 4 bytes (32 bits) |
+| Double floating point | double    | 8 bytes (64 bits) |
+
+Non-primitive:
+
+- Strings
+- Structs
+- Classes
+- Unions
+- Enums
+- ETC
+
+### Primitive Data Types
+
+**BOOLEAN:** True or False (1 byte)
+ex:
+
+```cpp
+bool gameover = true;
+```
