@@ -125,3 +125,34 @@ ex:
 ```cpp
 bool gameover = true;
 ```
+
+**SIGNED VS UNSIGNED:**
+
+Now for some of the rest of the primitive data types, you should know that they
+can be either signed vs unsigned.
+
+Any unsigned variable, of any type, does not have a sign, therefore the value
+stored in it is always POSITIVE.
+
+A signed variable, on the other hand, has a sign, therefore the value stored in
+it can be either POSITIVE OR NEGATIVE.
+
+**CHARACTER:**
+
+- char data type will store individual characters
+- when assigning a value to a char variable, you must use single quotes around
+the character
+- the char data type is a numeric data type, that means that each character will
+be stored as a number.
+
+ex:
+
+```cpp
+char myletter = 'a';
+```
+
+**INTEGER:**
+
+- integer variables can only hold whole numbers
+- unsigned integers will hold only a positive whole number
+- signed integers can hold either a positive whole number or a negative one
