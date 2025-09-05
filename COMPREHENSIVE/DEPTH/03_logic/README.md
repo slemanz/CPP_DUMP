@@ -35,3 +35,14 @@ statements, we can create code that can filter output based on conditions.
 
 TRUE and FALSE are synonymous with 1 and 0 in computer science
 
+### Truth table
+
+A truth table is a mathematical table used in logic—specifically in connection
+with Boolean algebra, Boolean functions, and propositional calculus, which sets
+out the functional values of logical expressions on each of their functional
+arguments, that is, for each combination of values taken by their logical
+variables. In particular, truth tables can be used to show whether a
+propositional expression is true for all legitimate input values, that is,
+logically valid.
+
+
