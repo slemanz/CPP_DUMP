@@ -2,3 +2,4 @@
 
 1. **[Hello World](01_hello/)**
 2. **[Variables and Data Types](02_variables/)**
+3. **[Logic](03_logic/)**
