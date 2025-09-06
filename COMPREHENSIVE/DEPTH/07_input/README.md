@@ -27,3 +27,4 @@ an integer that can be stored in the "myInt" variable you created. (This is an
 important detail as we will soon see)
 
 - **[Example 1](example1.cpp)**
+- **[Input.cpp](input.cpp)**
