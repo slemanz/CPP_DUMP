@@ -108,6 +108,7 @@ with the number of bytes allocated for only one element of the array,
 
 Therefore computing the number of elements in the array, which is the ARRAYSIZE.
 
-**Example code:**
+**Example codes:**
 
 - [arrays](arrays.cpp)
+- [string](string.cpp)
