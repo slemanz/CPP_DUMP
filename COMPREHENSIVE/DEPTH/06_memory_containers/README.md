@@ -42,6 +42,72 @@ limits us quite a bit...
 A Wouldn't it be nice if we could store more than one piece of data? Maybe we
 want to group a bunch of cars together and park them next to each other?
 
-### Examples
+### Array
+
+**What is an array?**
+
+- A container that can hold multiple values of the same data type;
+- has a size;
+- contiguous in memory;
+- homogenous
+- accessing elements is done through subscripting subscripting
+- at the moment of creation of an array, a chunk of contiguous memory is put aside
+for the entire array
+
+**Array Declaration:**
+
+```cpp
+dataType arrayName[ArraySize];
+```
+
+We must know the size before we declare an array, the size variable must be a
+constant because the array size cannot change. Once declared, an array will have
+the same size until the program finishes.
+
+**Array Declaration using an initialization list:**
+
+```cpp
+//let's say we have a list of numbers: 1, 2, 3, 4
+const int SIZE = 4; //because we have 4 elements
+int numbers[SIZE] = {1, 2, 3, 4};
+```
+
+**Array definition using Partial Array Initialization:**
+
+- when you initialize an array, you don't have to initialize all of it's
+elements, but you can initialize the first few elements only
+- the array elements will be initialized in order, starting from position 0
+onwards for as many elements as you are provinding
+- the rest of the elements will be initialized to something, depending of the
+data type(ex: int will be initialized to 0, string to " ", etc)
+
+**Array Declaration using implicit array sizing:**
+
+- You must know all the elements you want to store in the array beforehand for
+array initialization at the moment of declaration
+- An array's initialization list cannot have more values than the array has elements.
+- the size no longer has to be declared in this case, but it is "known" by you
+
+```cpp
+int numbers[] = {1, 2, 3, 4};
+```
+
+**Finding out the size when you don't know the size:**
+
+This is to be used when you have declared and fully initialized the array using
+implicit array sizing but not only.
+
+Store the computed size in a variable for later use:
+```cpp
+const int ARRAYSIZE = sizeof(arrayName)/sizeof(arrayName[0]);
+```
+
+This divides the number of bytes allocated for the entire array
+
+with the number of bytes allocated for only one element of the array,
+
+Therefore computing the number of elements in the array, which is the ARRAYSIZE.
+
+**Example code:**
 
 - [arrays](arrays.cpp)
