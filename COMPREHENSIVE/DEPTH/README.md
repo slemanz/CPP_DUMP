@@ -5,3 +5,4 @@
 3. **[Logic](03_logic/)**
 4. **[Conditional Statements](04_conditional/)**
 5. **[Arithmetic](05_arithmetic/)**
+6. **[Memory and Containers](06_memory_containers/)**
