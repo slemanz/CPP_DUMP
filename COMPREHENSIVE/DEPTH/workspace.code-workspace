@@ -1,0 +1,11 @@
+{
+	"folders": [
+        {
+            "path": "09_functions"
+        }
+    ],
+    "settings": {
+        "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+        "C_Cpp.default.compilerPath": "g++"
+    }
+}
