@@ -43,3 +43,13 @@ function.
 It is possible to pass the actual data, or you can pass a copy of the data.
 
 - [referenceVal.cpp](referenceVal.cpp)
+
+# Prototypes
+
+The compiler must know about a function's definition before it is called. If we
+are doing things top down, then if we have a function definition below main, and
+we call that function in main, the compiler will not know about the function
+definition at the time that it sees the call to the function. Because of this we
+must use something called a function-prototype.
+
+- [multipleFunctions.cpp](multipleFunctions.cpp)
