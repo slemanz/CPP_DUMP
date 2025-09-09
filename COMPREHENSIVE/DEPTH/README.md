@@ -8,4 +8,5 @@
 6. **[Memory and Containers](06_memory_containers/)**
 7. **[Input](07_input/)**
 8. **[Loops](08_loops/)**
-8. **[Functions](09_functions/)**
+9. **[Functions](09_functions/)**
+10. **[Virtual Memory](10_virtual/)**

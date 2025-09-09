@@ -2,6 +2,9 @@
 	"folders": [
         {
             "path": "09_functions"
+        },
+        {
+            "path": "10_virtual"
         }
     ],
     "settings": {
