@@ -31,5 +31,15 @@ void myFunction()
 ```
 
 - [function.cpp](function.cpp)
+- [function2.cpp](function2.cpp)
 
 - [problem.cpp](problem.cpp)
+
+### Passing by value vs passing by reference.
+
+There is an important concept that has to do with how you pass data to a
+function.
+
+It is possible to pass the actual data, or you can pass a copy of the data.
+
+- [referenceVal.cpp](referenceVal.cpp)
