@@ -82,3 +82,16 @@ int main(){
 - [Dynamic memory 2](dynamic_memory_2.cpp)
 - [Dynamic memory 3](dynamic_memory_3.cpp)
 - [Dynamic array](dynamic_array.cpp)
+
+### Nested Loops
+
+**The idea of loops inside loops**
+
+This can initially be quite a confusing topic, but the main thing to remember is
+that you can always come back to the execution flow and draw it out step by
+step.
+
+We have to become comfortable with the idea that "for each time something
+happens, another thing will happen multiple times".
+
+- [Nested Loop](nested_loop.cpp)
