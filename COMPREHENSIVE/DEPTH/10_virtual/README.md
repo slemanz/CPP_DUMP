@@ -81,3 +81,4 @@ int main(){
 - [Dynamic memory](dynamic_memory.cpp)
 - [Dynamic memory 2](dynamic_memory_2.cpp)
 - [Dynamic memory 3](dynamic_memory_3.cpp)
+- [Dynamic array](dynamic_array.cpp)
