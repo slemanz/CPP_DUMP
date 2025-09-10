@@ -95,3 +95,10 @@ We have to become comfortable with the idea that "for each time something
 happens, another thing will happen multiple times".
 
 - [Nested Loop](nested_loop.cpp)
+
+### 2d Arrays
+
+What are we talking about? Basically a grid. A multiplication table is a good
+example. `[row][column]`
+
+- [array 2d](array_2d.cpp)
