@@ -79,3 +79,4 @@ int main(){
 ```
 
 - [Dynamic memory](dynamic_memory.cpp)
+- [Dynamic memory 2](dynamic_memory_2.cpp)
