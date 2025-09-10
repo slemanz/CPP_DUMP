@@ -13,7 +13,7 @@ int main(void)
     int *myDynamicPointer = new int;
 
     cout << myInt << endl;
-    
+
     myFunction(&myInt);
     myFunction(myDynamicPointer);
 
