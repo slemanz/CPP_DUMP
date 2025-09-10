@@ -77,3 +77,5 @@ int main(){
     return 0;
 }
 ```
+
+- [Dynamic memory](dynamic_memory.cpp)
