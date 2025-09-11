@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -25,7 +26,7 @@ int main(void)
     {
         for(int c = 0; c < tablesize; c++)
         {
-            cout << multTable[r][c] << " ";
+            cout << setw(3) << multTable[r][c] << " ";
         }
         cout << endl;
     }
