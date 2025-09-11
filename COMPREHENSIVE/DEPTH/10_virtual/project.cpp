@@ -14,6 +14,23 @@
  */
 
 #include <iostream>
+#include <iomanip>
+
+/*
+    This function prints the
+    gameboard
+*/
+void printBoard(char board[][3])
+{
+    for(int r = 0; r < 3; r++)
+    {
+        for(int c = 0; c < 3; c++)
+        {
+            std::cout << std::setw(2) << board[r][c];
+        }
+        std::cout << std::endl;
+    }
+}
 
 int main(void)
 {
@@ -36,7 +53,7 @@ int main(void)
     {   
         std::cout << players[numTurns%2] << "'s turn" << std::endl;
         std::cout << "Current Game Board:" << std::endl;
-        
+        printBoard(board);
         std::cout << "Enter a row: ";
         std::cin >> row;
 
