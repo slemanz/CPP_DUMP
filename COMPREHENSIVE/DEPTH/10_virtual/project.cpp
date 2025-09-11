@@ -144,9 +144,23 @@ int main(void)
         // asign X or 0 to correct spot on the board
         board[row-1][col-1] = players[numTurns%2];
         // Check if game was won and increment the number of turns
-
+        gameOver = checkBoard(board);
         numTurns++;
-    }while(1);
+    }while(!gameOver && row != 0 && col != 0 && numTurns < 9);
+
+    //Print the final board and check one last time to see if
+    //somebody won or whether it was a draw
+    printBoard(board);
+    gameOver = checkBoard(board);
+    if(gameOver)
+    {
+        std::cout << players[(numTurns+1)%2] << "'s win!" << std::endl;
+        std::cout << "Game won after " << numTurns << " Turns" << std::endl;
+    }
+    else
+    {
+        std::cout << "Game ended in Draw" << std::endl;
+    }
 
     return 0;
 }
