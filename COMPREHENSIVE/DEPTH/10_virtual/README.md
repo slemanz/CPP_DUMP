@@ -102,3 +102,4 @@ What are we talking about? Basically a grid. A multiplication table is a good
 example. `[row][column]`
 
 - [array 2d](array_2d.cpp)
+- [dynamic array 2d](dynamic_2d.cpp)
