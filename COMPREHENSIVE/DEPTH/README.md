@@ -11,3 +11,4 @@
 9. **[Functions](09_functions/)**
 10. **[Virtual Memory](10_virtual/)**
 11. **[File Streams](11_file/)**
+12. **[Vectors](12_vectors/)**

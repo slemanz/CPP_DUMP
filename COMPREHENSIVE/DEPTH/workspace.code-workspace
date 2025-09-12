@@ -8,6 +8,9 @@
         },
         {
             "path": "11_file"
+        },
+        {
+            "path": "12_vectors"
         }
     ],
     "settings": {
