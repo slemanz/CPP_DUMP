@@ -12,7 +12,7 @@ To read and write from files, we will need a library similar to <iostream>, but
 for files instead of reading and writing to the console. Rather than the stream
 being from the console, this time the stream will be flowing to and from a file.
 
-ifstream
+**ifstream**
 
 Let's first focus on reading from a file. To do this, we need create a variable
 of type "ifstream" (input file stream).
@@ -41,3 +41,19 @@ One last thing we need to do is close the filestream since we opened it
 Ex: `myStream.close();`
 
 -[example.cpp](example.cpp)
+
+**ofstream**
+
+To write to a file we do something very similar but instead of using the input
+operator (>>) we will use the output operator (<<) similar to when we use cout.
+
+Ex: 
+```cpp
+ofstream myOutStream;
+myOutStream.open("output.txt");
+myOutStream << mylnt;
+cout << mylnt << endl;
+myOutStream.close();
+```
+
+-[example2.cpp](example2.cpp)
