@@ -7,4 +7,39 @@
     (You should make the input.txt file yourself. The file should contain at
     least 10 numbers)
 */
+#include <iostream>
+#include <fstream>
 
+int main(int argc, char* argv[])
+{
+    if(argc != 2)
+    {
+        std::cout << "usage: ./run <inputfilename>" << std::endl;
+        exit(-1);
+    }
+
+    int size;
+    int value;
+    int position_count = 0;
+    std::ifstream myStream;
+    myStream.open(argv[1]);
+    myStream >> size;
+    int *myArr = new int[size];
+
+    while(myStream >> value)
+    {
+        myArr[position_count++] = value;
+    }
+
+    myStream.close();
+
+    for(int i = 0; i < size; i++)
+    {
+        std::cout << myArr[i] << " ";
+    }
+    std::cout << std::endl;
+
+    delete [] myArr;
+
+    return 0;
+}
