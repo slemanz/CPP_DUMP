@@ -91,3 +91,7 @@ while(myStream >> mylnt)
 ```
 
 - [challenge](challenge.cpp)
+
+# Exceptions
+
+-[exceptions.cpp](exceptions.cpp)
