@@ -57,3 +57,37 @@ myOutStream.close();
 ```
 
 -[example2.cpp](example2.cpp)
+
+# Command Line Arguments
+
+Making our file I/O programs more flexible!
+
+Currently the only type of file input/output we have seen involves hard-coding
+the name of the file we want to open with the stream. What if we want to compile
+our program and be able to run it with whatever file we want? How would we do
+that?
+
+**Main Function arguments**
+
+```cpp
+int main(int argc, char* argv[]){
+//All the main stuff...
+}
+```
+
+```bash
+./myprogram inputfile.txt
+```
+
+In this example `argc = 2` and `argv[] = [myprogram.opp, inputFile.txt]`
+
+Looping with input
+
+```cpp
+int mylnt;
+ifstream myStream;
+myStream.open("myfile.txt");
+while(myStream >> mylnt)
+```
+
+- [challenge](challenge.cpp)
