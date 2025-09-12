@@ -5,6 +5,9 @@
         },
         {
             "path": "10_virtual"
+        },
+        {
+            "path": "11_file"
         }
     ],
     "settings": {
