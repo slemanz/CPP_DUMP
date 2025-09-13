@@ -3,3 +3,17 @@
 First: 
 
 - [Challenge](challenge.cpp)
+
+## Bubble sort
+
+Is a simple sorting algorithm used in computer science to arrange elements of a
+list (such as an array) in a specific order, typically ascending or descending.
+
+It is one of the easiest sorting algorithms to understand and implement.
+
+Its average and worst-case time complexity is O(n²), making it inefficient for
+large datasets.
+
+The algorithm repeatedly steps through the list, comparing adjacent elements.
+
+- [BubbleSort](bubble_sort.cpp)
