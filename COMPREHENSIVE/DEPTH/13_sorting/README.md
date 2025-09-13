@@ -17,3 +17,4 @@ large datasets.
 The algorithm repeatedly steps through the list, comparing adjacent elements.
 
 - [BubbleSort](bubble_sort.cpp)
+- [Better BubbleSort](better_bubble_sort.cpp)
