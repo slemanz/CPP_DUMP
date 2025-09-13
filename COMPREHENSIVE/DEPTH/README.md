@@ -12,3 +12,4 @@
 10. **[Virtual Memory](10_virtual/)**
 11. **[File Streams](11_file/)**
 12. **[Vectors](12_vectors/)**
+13. **[Sorting](13_sorting/)**

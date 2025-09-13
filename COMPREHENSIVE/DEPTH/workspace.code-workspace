@@ -11,6 +11,9 @@
         },
         {
             "path": "12_vectors"
+        },
+        {
+            "path": "13_sorting"
         }
     ],
     "settings": {
