@@ -18,3 +18,12 @@ The algorithm repeatedly steps through the list, comparing adjacent elements.
 
 - [BubbleSort](bubble_sort.cpp)
 - [Better BubbleSort](better_bubble_sort.cpp)
+
+## Insetion Sort
+
+**The opposite of bubbling**
+
+The goal of isertion sort is to pull a new element into the leftmost sorted
+portion of an array/vector and keep doing so until the array vector is reached.
+
+- [Insertion Sort](insertion_sort.cpp)
