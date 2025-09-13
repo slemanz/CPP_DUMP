@@ -14,6 +14,9 @@
         },
         {
             "path": "13_sorting"
+        },
+        {
+            "path": "14_searching"
         }
     ],
     "settings": {
