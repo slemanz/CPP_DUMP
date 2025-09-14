@@ -6,6 +6,8 @@
 using namespace std;
 
 int file_getLineCount(string file);
+void insertion_sort(vector<string> &names, vector<int> &ages);
+void insertion_sort(vector<string> &names, vector<int> &ages);
 
 void lower(string &s){
     for(char & i : s)
@@ -41,6 +43,7 @@ int main(void)
     }
 
     // sort
+    insertion_sort(vectNames, vectAges);
 
     for(int i = 0; i < lineCount; i++)
     {
@@ -67,4 +70,34 @@ int file_getLineCount(string filename)
 
     file.close();
     return lineCount;
+}
+
+void insertion_sort(vector<string> &names, vector<int> &ages)
+{
+    string insertion_item;
+    int sorted_position;
+
+    string tempStr;
+    int tempInt;
+
+    for(int i = 0; i < (names.size()); i++)
+    {
+        insertion_item = names[i];
+        sorted_position = i - 1;
+
+        while(sorted_position >= 0 && names[sorted_position] > insertion_item)
+        {
+            // swap
+            tempStr = names[sorted_position];
+            names[sorted_position] = names[sorted_position + 1];
+            names[sorted_position+1] = tempStr;
+
+            tempInt = ages[sorted_position];
+            ages[sorted_position] = ages[sorted_position + 1];
+            ages[sorted_position+1] = tempInt;
+
+            // move our position one to the left inside sorted area
+            sorted_position--;
+        }
+    }
 }
