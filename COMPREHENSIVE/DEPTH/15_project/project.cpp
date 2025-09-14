@@ -7,7 +7,7 @@ using namespace std;
 
 int file_getLineCount(string file);
 void insertion_sort(vector<string> &names, vector<int> &ages);
-void insertion_sort(vector<string> &names, vector<int> &ages);
+int binary_search(vector<string> &v, string name);
 
 void lower(string &s){
     for(char & i : s)
@@ -45,12 +45,24 @@ int main(void)
     // sort
     insertion_sort(vectNames, vectAges);
 
-    for(int i = 0; i < lineCount; i++)
-    {
-        cout << vectNames[i] << " " << vectAges[i] << endl;
-    }
-
     // search
+    string name_to_search;
+    do{
+        cout << "Enter a name to be searched in the database (or type 'quit'): ";
+        cin >> name_to_search;
+        lower(name_to_search);
+        if(name_to_search == "quit") break;
+
+        int search = binary_search(vectNames, name_to_search);
+        if( search != -1)
+        {
+            cout << "The age for " << vectNames[search] << " is " << vectAges[search] << endl;
+        }else
+        {
+            cout << "The name " << name_to_search << " does not exists in database" << endl;
+        }
+
+    }while(name_to_search != "quit");
 
     return 0;
 }
@@ -100,4 +112,27 @@ void insertion_sort(vector<string> &names, vector<int> &ages)
             sorted_position--;
         }
     }
+}
+
+int binary_search(vector<string> &v, string name)
+{
+    int low = 0;
+    int high = v.size() - 1;
+    int middle;
+
+    while(low <= high)
+    {
+        middle = (low+high)/2;
+        if(name > v[middle])
+        {
+            low = middle + 1;
+        }else if(name < v[middle])
+        {
+            high = middle - 1;
+        }else
+        {
+            return middle;
+        }
+    }
+    return -1;
 }
