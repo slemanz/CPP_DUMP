@@ -105,6 +105,8 @@ int main(){
 You can have an array/vector of structs!
 
 - [Quick challenge](quick_challenge.cpp)
+- [Quick challenge 2](quick_challenge2.cpp)
+- [Structs](structs.cpp)
 
 
 
