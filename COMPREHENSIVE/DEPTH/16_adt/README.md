@@ -79,3 +79,32 @@ int main()
 ```
 
 - [Practice](practice.cpp)
+
+### More on structs
+
+Way to initialize:
+
+```cpp
+#include<iostream>
+
+using namespace std;
+
+struct Employee{
+    int id;
+    string name;
+    char group;
+    float hours;
+};
+
+int main(){
+    Employee e1 = {56987, "Fred", 'c', 43.5};
+    return 0;
+}
+```
+
+You can have an array/vector of structs!
+
+- [Quick challenge](quick_challenge.cpp)
+
+
+
