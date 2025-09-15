@@ -53,3 +53,29 @@ int main(){
     return 0;
 }
 ```
+
+How do we access these member variables?
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+struct car{
+    int price;
+    string color;
+    float mpg;
+};
+
+int main()
+{
+    car c;
+    c.price = 20000;
+    c.color = "blue"; A
+    c.mpg 22.5;
+    cout << c.price << " " << c.color << " " << c.mpg << endl;
+    return 0;
+}
+```
+
+- [Practice](practice.cpp)
