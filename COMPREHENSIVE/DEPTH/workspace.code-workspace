@@ -20,6 +20,9 @@
         },
         {
             "path": "15_project"
+        },
+        {
+            "path": "16_adt"
         }
     ],
     "settings": {
