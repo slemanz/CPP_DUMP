@@ -8,6 +8,9 @@ class Car{
         void driveCar(int miles);
         void setPaint(std::string color);
         int getOdometer();
+        std::string getPaint();
+        std::string getBrand();
+        std::string getModel();
         float getFuel();
         void addFuel(int gallons);
     
@@ -55,12 +58,37 @@ void Car::addFuel(int gallons)
     _fuel += gallons;
 }
 
+std::string Car::getPaint()
+{
+    return _paintColor;
+}
+
+std::string Car::getBrand()
+{
+    return _brand;
+}
+
+std::string Car::getModel()
+{
+    return _model;
+}
+
 int main(void)
 {
     Car car("blue", "sabaru", "outback", 40000);
+    Car car2("white", "ford", "fiesta", 10000);
 
-    std::cout << car.getOdometer() << std::endl;
-    std::cout << car.getFuel() << std::endl;
+    std::cout << "Car 1: " << car.getOdometer() << std::endl;
+    std::cout << "Car 1: " << car.getFuel() << std::endl;
+    std::cout << "Car 1: " << car.getPaint() << std::endl;
+
+    // Getters (accessers) and Setters (mutators)
+    car.setPaint("black");
+    std::cout << "Car 1: " << car.getPaint() << std::endl << std::endl;
+
+    std::cout << "Car 2: " << car2.getOdometer() << std::endl;
+    std::cout << "Car 2: " << car2.getFuel() << std::endl;
+    std::cout << "Car 2: " << car2.getPaint() << std::endl;
 
     return 0;
 }
