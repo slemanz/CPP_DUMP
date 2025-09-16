@@ -7,7 +7,11 @@ class Car{
 
         void driveCar(int miles);
         void setPaint(std::string color);
-        int getOdometer();
+        void setOdometer(int reset);
+
+        // means: doesnt modify any data from the class
+        int getOdometer() const; 
+
         std::string getPaint();
         std::string getBrand();
         std::string getModel();
@@ -43,7 +47,7 @@ void Car::setPaint(std::string color)
     _paintColor = color;
 }
 
-int Car::getOdometer()
+int Car::getOdometer() const
 {
     return _odometer;
 }
@@ -73,8 +77,14 @@ std::string Car::getModel()
     return _model;
 }
 
+void Car::setOdometer(int reset)
+{
+    _odometer = reset;
+}
+
 int main(void)
 {
+    const int i1 = 5;
     Car car("blue", "sabaru", "outback", 40000);
     Car car2("white", "ford", "fiesta", 10000);
 
@@ -84,6 +94,8 @@ int main(void)
 
     // Getters (accessers) and Setters (mutators)
     car.setPaint("black");
+    car.setOdometer(0);
+    std::cout << "Car 1: " << car.getOdometer() << std::endl;
     std::cout << "Car 1: " << car.getPaint() << std::endl << std::endl;
 
     std::cout << "Car 2: " << car2.getOdometer() << std::endl;
