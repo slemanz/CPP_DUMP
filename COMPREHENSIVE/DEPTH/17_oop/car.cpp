@@ -3,6 +3,8 @@
 class Car{
     public:
         // member function
+        Car(std::string paint, std::string brand, std::string model, int miles);
+
         void driveCar(int miles);
         void setPaint(std::string color);
         int getOdometer();
@@ -11,39 +13,54 @@ class Car{
     
     private:
         // member variables
-        float fuel;
-        std::string paintColor;
-        std::string model;
-        int odometer;
+        float _fuel;
+        std::string _paintColor;
+        std::string _brand;
+        std::string _model;
+        int _odometer;
 };
+
+Car::Car(std::string paint, std::string brand, std::string model, int miles)
+{
+    _fuel = 12.5;
+    _odometer = miles;
+    _paintColor = paint;
+    _brand = brand;
+    _model = model;
+}
 
 void Car::driveCar (int miles)
 {
-    odometer += miles;
-    fuel = miles/22;
+    _odometer += miles;
+    _fuel = miles/22;
 }
 
 void Car::setPaint(std::string color)
 {
-    paintColor = color;
+    _paintColor = color;
 }
 
 int Car::getOdometer()
 {
-    return odometer;
+    return _odometer;
 }
 
 float Car::getFuel()
 {
-    return fuel;
+    return _fuel;
 }
 
 void Car::addFuel(int gallons)
 {
-    fuel += gallons;
+    _fuel += gallons;
 }
 
 int main(void)
 {
+    Car car("blue", "sabaru", "outback", 40000);
+
+    std::cout << car.getOdometer() << std::endl;
+    std::cout << car.getFuel() << std::endl;
+
     return 0;
 }
