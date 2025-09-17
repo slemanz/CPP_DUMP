@@ -57,7 +57,20 @@ void Car::setOdometer(int reset)
 
 Car::Car()
 {
-    
+    _fuel = 0;
+    _odometer = 0;
+    _paintColor = "";
+    _brand = "";
+    _model = "";
+}
+
+Car::Car(Car &obj)
+{
+    _fuel = obj._fuel;
+    _odometer = obj._odometer;
+    _paintColor = obj._paintColor;
+    _brand = obj._brand;
+    _model = obj._model;
 }
 
 Car::~Car()

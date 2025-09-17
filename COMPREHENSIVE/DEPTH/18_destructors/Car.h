@@ -8,6 +8,7 @@ class Car{
         // member function
         Car();
         Car(std::string paint, std::string brand, std::string model, int miles);
+        Car(Car &obj);
         ~Car();
 
         void driveCar(int miles);

@@ -12,3 +12,9 @@ automatic memory management, helping to prevent memory leaks and dangling
 pointers. They encapsulate raw pointers and manage the lifetime of the
 dynamically allocated objects they point to, typically using the Resource
 Acquisition Is Initialization (RAII) idiom.
+
+### Copy Constructor
+
+A copy constructor in C++ is a special type of constructor that initializes a
+new object using an existing object of the same class. It is invoked when an
+object is created as a copy of another object. 
