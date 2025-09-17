@@ -17,3 +17,4 @@
 15. **[Project](15_project/)**
 16. **[Abstract Data Types](16_adt/)**
 17. **[Object Oriented Programming](17_oop/)**
+18. **[Destructors](18_destructors/)**

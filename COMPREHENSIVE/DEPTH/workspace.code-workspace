@@ -26,6 +26,9 @@
         },
         {
             "path": "17_oop"
+        },
+        {
+            "path": "18_destructors"
         }
     ],
     "settings": {
