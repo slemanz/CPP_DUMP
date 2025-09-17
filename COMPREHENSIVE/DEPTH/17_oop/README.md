@@ -86,4 +86,22 @@ void Car::addFuel (int gallons){
 }
 ```
 
-- [car](car.cpp)
+- [car example](car_example.cpp)
+
+## Using multiple files
+
+**The header file:** This file contains the class definition/blueprint. The name
+*is the same as the class but the extension is '.h' which stands for "header".
+
+**The implementation file:** This file contains the class member function
+*implementations. The name is the same as the class and the extension is '.cpp'
+
+**The client file:** This file contains the main function and other
+*functions/code that is meant for the user/developer who wants to use the class
+
+
+
+- [Car.h](Car.h)
+- [Car.cpp](Car.cpp)
+- [main.cpp](main.cpp)
+- [Makefile](Makefile)
