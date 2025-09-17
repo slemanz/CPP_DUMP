@@ -1,24 +1,6 @@
 {
 	"folders": [
         {
-            "path": "09_functions"
-        },
-        {
-            "path": "10_virtual"
-        },
-        {
-            "path": "11_file"
-        },
-        {
-            "path": "12_vectors"
-        },
-        {
-            "path": "13_sorting"
-        },
-        {
-            "path": "14_searching"
-        },
-        {
             "path": "15_project"
         },
         {
@@ -29,6 +11,9 @@
         },
         {
             "path": "18_destructors"
+        },
+        {
+            "path": "19_overload"
         }
     ],
     "settings": {
