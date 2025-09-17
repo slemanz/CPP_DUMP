@@ -1,4 +1,5 @@
-#include "Car.h"
+#include <iostream>
+#include "Car.hpp"
 
 Car::Car(std::string paint, std::string brand, std::string model, int miles)
 {
@@ -7,6 +8,8 @@ Car::Car(std::string paint, std::string brand, std::string model, int miles)
     _paintColor = paint;
     _brand = brand;
     _model = model;
+    _upgradeCodes = new std::vector<int>();
+    _upgradeCodes->push_back(1);
 }
 
 void Car::driveCar (int miles)
@@ -33,6 +36,11 @@ float Car::getFuel()
 void Car::addFuel(int gallons)
 {
     _fuel += gallons;
+}
+
+void Car::addUpgrade(int code)
+{
+    _upgradeCodes->push_back(code);
 }
 
 std::string Car::getPaint()
@@ -62,6 +70,8 @@ Car::Car()
     _paintColor = "";
     _brand = "";
     _model = "";
+    _upgradeCodes = new std::vector<int>();
+    _upgradeCodes->push_back(1);
 }
 
 Car::Car(Car &obj)
@@ -71,7 +81,14 @@ Car::Car(Car &obj)
     _paintColor = obj._paintColor;
     _brand = obj._brand;
     _model = obj._model;
+    _upgradeCodes = new std::vector<int>();
+    for(int i = 0; i < obj._upgradeCodes->size(); i++)
+    {
+        auto temp = *(obj._upgradeCodes);
+        this->_upgradeCodes->push_back(temp[i]);
+    }
 }
+
 
 Car::~Car()
 {

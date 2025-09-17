@@ -1,6 +1,6 @@
 #include <iostream>
 #include <memory>
-#include "Car.h"
+#include "Car.hpp"
 
 int main(void)
 {
@@ -8,7 +8,7 @@ int main(void)
     Car car2("white", "ford", "fiesta", 10000);
 
     std::unique_ptr<Car> car3(new Car);
-    Car car4(car2);
+    Car car4 = car2;
 
     std::cout << "Car 1: " << car->getOdometer() << std::endl;
     std::cout << "Car 1: " << car->getFuel() << std::endl;

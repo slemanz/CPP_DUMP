@@ -1,7 +1,8 @@
 #ifndef INC_CAR_HPP
 #define INC_CAR_HPP
 
-#include <iostream>
+#include <string>
+#include <vector>
 
 class Car{
     public:
@@ -14,6 +15,7 @@ class Car{
         void driveCar(int miles);
         void setPaint(std::string color);
         void setOdometer(int reset);
+        void addUpgrade(int code);
 
         // means: doesnt modify any data from the class
         int getOdometer() const; 
@@ -27,6 +29,7 @@ class Car{
     private:
         // member variables
         float _fuel;
+        std::vector<int> *_upgradeCodes;
         std::string _paintColor;
         std::string _brand;
         std::string _model;
