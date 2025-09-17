@@ -55,6 +55,11 @@ void Car::setOdometer(int reset)
     _odometer = reset;
 }
 
+Car::Car()
+{
+    
+}
+
 Car::~Car()
 {
     std::cout << "Inside the destructor! Cleaning up." << std::endl;

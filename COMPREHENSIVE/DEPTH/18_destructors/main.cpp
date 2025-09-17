@@ -1,10 +1,13 @@
 #include <iostream>
+#include <memory>
 #include "Car.h"
 
 int main(void)
 {
     Car *car = new Car("blue", "sabaru", "outback", 40000);
     Car car2("white", "ford", "fiesta", 10000);
+
+    std::unique_ptr<Car> car3(new Car);
 
     std::cout << "Car 1: " << car->getOdometer() << std::endl;
     std::cout << "Car 1: " << car->getFuel() << std::endl;
