@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include "Car.hpp"
 
 Car::Car(std::string paint, std::string brand, std::string model, int miles)
@@ -63,9 +64,13 @@ void Car::setOdometer(int reset)
     _odometer = reset;
 }
 
-std::vector<int> Car::getUpgrades()
+void Car::showUpgrades()
 {
-    return *_upgradeCodes;
+    for(auto i : *_upgradeCodes)
+    {
+        std::cout << i << " ";
+    }
+    std::cout << std::endl;
 }
 
 Car::Car()
@@ -100,7 +105,7 @@ Car::~Car()
     std::cout << "Inside the destructor! Cleaning up." << std::endl;
 }
 
-Car &Car::operator=(Car &obj)
+Car &Car::operator=(const Car &obj)
 {
     this->_fuel = obj._fuel;
     this->_odometer = obj._odometer;
@@ -115,5 +120,27 @@ Car &Car::operator=(Car &obj)
         this->_upgradeCodes->push_back(temp[i]);
     }
 
+    return *this;
+}
+
+Car Car::operator-(const Car &obj)
+{
+    std::unique_ptr<Car> newCar(new Car);
+    if((_model == obj._model) && (_brand == obj._brand) && (obj._upgradeCodes->size() < _upgradeCodes->size()))
+    {
+        *newCar = obj;
+        return *newCar;
+    }
+    return *this;
+}
+
+Car Car::operator+(const Car &obj)
+{
+    std::unique_ptr<Car> newCar(new Car);
+    if((_model == obj._model) && (_brand == obj._brand) && (obj._upgradeCodes->size() > _upgradeCodes->size()))
+    {
+        *newCar = obj;
+        return *newCar;
+    }
     return *this;
 }

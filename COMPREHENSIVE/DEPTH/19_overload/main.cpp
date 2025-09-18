@@ -6,28 +6,39 @@ int main(void)
 {
     Car *car = new Car("blue", "sabaru", "outback", 40000);
     Car car2("white", "ford", "fiesta", 10000);
+    Car car4("blue", "ford", "fiesta", 10000);
 
     Car car3 = *car;
     car3 = car2;
 
-    car2.addUpgrade(10);
+    car4.addUpgrade(18);
+    car4.addUpgrade(32);
+
+    //car2.addUpgrade(10);
     car3.addUpgrade(17);
 
-    std::vector<int> upgrades = car2.getUpgrades();
-    std::cout << "Car 2: ";
-    for(int i = 0; i < upgrades.size(); i++)
-    {
-        std::cout << upgrades[i] << " ";
-    }
-    std::cout << std::endl;
+    Car car5 = *car;
+    car5 = car2+car4;
 
-    upgrades = car3.getUpgrades();
+    std::cout << "Car 2: ";
+    car2.showUpgrades();
+
     std::cout << "Car 3: ";
-    for(int i = 0; i < upgrades.size(); i++)
-    {
-        std::cout << upgrades[i] << " ";
-    }
-    std::cout << std::endl << std::endl;
+    car3.showUpgrades();
+
+    std::cout << "Car 4: ";
+    car4.showUpgrades();
+
+    std::cout << "Car 5: ";
+    car5.showUpgrades();
+
+    car5 = car2-car4;
+
+    std::cout << "Car 5: ";
+    car5.showUpgrades();
+
+
+    std::cout << std::endl;
 
     delete car;
 
