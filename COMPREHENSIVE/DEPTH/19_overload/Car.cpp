@@ -144,3 +144,8 @@ Car Car::operator+(const Car &obj)
     }
     return *this;
 }
+
+bool Car::operator==(const Car &obj)
+{
+
+}

@@ -37,3 +37,14 @@ named `operator+`.
 Similarly, to overload the subtraction operator, you define a member function
 named `operator-`.
 
+### Equality
+
+Overloading the equality operator (`operator==`) in C++ allows you to define how
+two objects of a user-defined class are compared for equality. This enables you
+to use the == operator with your custom objects in an intuitive way.
+
+### Implementation
+
+- [main.cpp](main.cpp)
+- [Car.hpp](Car.hpp)
+- [Car.cpp](Car.cpp)

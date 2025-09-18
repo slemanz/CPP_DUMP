@@ -14,6 +14,7 @@ class Car{
         Car &operator=(const Car &obj);
         Car operator-(const Car &obj);
         Car operator+(const Car &obj);
+        bool operator==(const Car &obj);
 
         void driveCar(int miles);
         void setPaint(std::string color);
