@@ -28,3 +28,12 @@ an issue where when we assign an object to another object, if they have pointer
 data member variables, then those variables will point to the same memory. We
 must come up with a custom way of assignment... so let's head to the editor to
 discuss the syntax...
+
+### Addition and Subtraction
+
+To overload the addition operator for a class, you define a member function
+named `operator+`.
+
+Similarly, to overload the subtraction operator, you define a member function
+named `operator-`.
+
