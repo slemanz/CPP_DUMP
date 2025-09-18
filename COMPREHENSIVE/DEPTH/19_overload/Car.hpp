@@ -16,6 +16,7 @@ class Car{
         void setPaint(std::string color);
         void setOdometer(int reset);
         void addUpgrade(int code);
+        void addFuel(int gallons);
 
         // means: doesnt modify any data from the class
         int getOdometer() const; 
@@ -24,7 +25,9 @@ class Car{
         std::string getBrand();
         std::string getModel();
         float getFuel();
-        void addFuel(int gallons);
+
+        std::vector<int> getUpgrades();
+
     
     private:
         // member variables

@@ -7,28 +7,27 @@ int main(void)
     Car *car = new Car("blue", "sabaru", "outback", 40000);
     Car car2("white", "ford", "fiesta", 10000);
 
-    std::unique_ptr<Car> car3(new Car);
-    Car car4 = car2;
+    Car car3 = *car;
+    car3 = car2;
 
-    std::cout << "Car 1: " << car->getOdometer() << std::endl;
-    std::cout << "Car 1: " << car->getFuel() << std::endl;
-    std::cout << "Car 1: " << car->getPaint() << std::endl;
+    car2.addUpgrade(10);
+    car3.addUpgrade(17);
 
-    // Getters (accessers) and Setters (mutators)
-    car->setPaint("black");
-    car->setOdometer(0);
-    std::cout << "Car 1: " << car->getOdometer() << std::endl;
-    std::cout << "Car 1: " << car->getPaint() << std::endl << std::endl;
+    std::vector<int> upgrades = car2.getUpgrades();
+    std::cout << "Car 2: ";
+    for(int i = 0; i < upgrades.size(); i++)
+    {
+        std::cout << upgrades[i] << " ";
+    }
+    std::cout << std::endl;
 
-    std::cout << "Car 2: " << car2.getOdometer() << std::endl;
-    std::cout << "Car 2: " << car2.getFuel() << std::endl;
-    std::cout << "Car 2: " << car2.getPaint() << std::endl << std::endl;
-
-    std::cout << "Car 2: " << car2.getPaint() << std::endl;
-    std::cout << "Car 4: " << car4.getPaint() << std::endl;
-    car4.setPaint("purple");
-    std::cout << "Car 2: " << car2.getPaint() << std::endl;
-    std::cout << "Car 4: " << car4.getPaint() << std::endl << std::endl;
+    upgrades = car3.getUpgrades();
+    std::cout << "Car 3: ";
+    for(int i = 0; i < upgrades.size(); i++)
+    {
+        std::cout << upgrades[i] << " ";
+    }
+    std::cout << std::endl << std::endl;
 
     delete car;
 

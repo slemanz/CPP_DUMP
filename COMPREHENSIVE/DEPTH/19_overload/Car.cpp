@@ -63,6 +63,11 @@ void Car::setOdometer(int reset)
     _odometer = reset;
 }
 
+std::vector<int> Car::getUpgrades()
+{
+    return *_upgradeCodes;
+}
+
 Car::Car()
 {
     _fuel = 0;
