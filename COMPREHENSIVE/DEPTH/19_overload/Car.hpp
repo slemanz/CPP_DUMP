@@ -11,6 +11,7 @@ class Car{
         Car(std::string paint, std::string brand, std::string model, int miles);
         Car(Car &obj);
         ~Car();
+        Car &operator=(Car &obj);
 
         void driveCar(int miles);
         void setPaint(std::string color);

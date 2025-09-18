@@ -99,3 +99,21 @@ Car::~Car()
 {
     std::cout << "Inside the destructor! Cleaning up." << std::endl;
 }
+
+Car &Car::operator=(Car &obj)
+{
+    this->_fuel = obj._fuel;
+    this->_odometer = obj._odometer;
+    this->_paintColor = obj._paintColor;
+    this->_brand = obj._brand;
+    this->_model = obj._model;
+    this->_upgradeCodes->clear();
+
+    for(int i = 0; i < obj._upgradeCodes->size(); i++)
+    {
+        auto temp = *(obj._upgradeCodes);
+        this->_upgradeCodes->push_back(temp[i]);
+    }
+
+    return *this;
+}
