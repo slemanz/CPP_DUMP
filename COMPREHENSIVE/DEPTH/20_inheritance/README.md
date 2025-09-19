@@ -23,3 +23,8 @@ Base Class -> Derived classes
 - [main.cpp](main.cpp)
 - [Car.hpp](Car.hpp)
 - [Car.cpp](Car.cpp)
+- Inheritance:
+  - [Truck.hpp](Truck.hpp)
+  - [Truck.cpp](Truck.cpp)
+  - [Sedan.hpp](Sedan.hpp)
+  - [Sedan.cpp](Sedan.cpp)
