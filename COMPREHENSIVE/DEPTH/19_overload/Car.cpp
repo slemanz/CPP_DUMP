@@ -165,3 +165,25 @@ bool Car::operator==(const Car &obj)
     }
     return false;
 }
+
+
+std::ostream &operator<<(std::ostream &outs, const Car &obj)
+{
+    outs << "CAR INFO: " << std::endl;
+    outs << "Make: " << obj._brand << std::endl;
+    outs << "Model: " << obj._model << std::endl;
+    outs << "Color: " << obj._paintColor << std::endl;
+
+    return outs;
+}
+
+
+
+std::istream &operator>>(std::istream &ins, Car &obj)
+{
+    ins >> obj._brand;
+    ins >> obj._model;
+    ins >> obj._paintColor;
+
+    return ins;
+}

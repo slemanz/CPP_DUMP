@@ -3,6 +3,7 @@
 
 #include <string>
 #include <vector>
+#include <iostream>
 
 class Car{
     public:
@@ -15,6 +16,8 @@ class Car{
         Car operator-(const Car &obj);
         Car operator+(const Car &obj);
         bool operator==(const Car &obj);
+        friend std::ostream &operator<<(std::ostream &outs, const Car &obj);
+        friend std::istream &operator>>(std::istream &ins, Car &obj);
 
         void driveCar(int miles);
         void setPaint(std::string color);

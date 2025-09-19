@@ -43,9 +43,14 @@ int main(void)
     {
         std::cout << "Car 2 and car2 arent the same" << std::endl;
     }
-
-
     std::cout << std::endl;
+
+    std::cout << car2 << std::endl;
+
+    std::cout << "Input make/model/color for car: ";
+    std::cin >> car2;
+    std::cout << car2 << std::endl;
+
 
     delete car;
 
