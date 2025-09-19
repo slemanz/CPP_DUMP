@@ -4,6 +4,8 @@ INCLUDES += -I /
 SOURCES += main.cpp
 SOURCES += Car.cpp
 SOURCES += Truck.cpp
+SOURCES += Sedan.cpp
+SOURCES += Suv.cpp
 
 all: run
 
