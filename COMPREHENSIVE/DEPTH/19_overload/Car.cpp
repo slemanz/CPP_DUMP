@@ -147,5 +147,21 @@ Car Car::operator+(const Car &obj)
 
 bool Car::operator==(const Car &obj)
 {
+    bool theSame = false;
+    if((_model == obj._model) && (_brand == obj._brand) && (_paintColor == obj._paintColor) && (_upgradeCodes->size() == obj._upgradeCodes->size()))
+    {
+        for(int i = 0; i < _upgradeCodes->size(); i++)
+        {
+            int code = (*_upgradeCodes)[i];
+            theSame = false;
+            for(int j = 0; j < obj._upgradeCodes->size(); j++)
+            {
+                if((*obj._upgradeCodes)[j] == code) theSame = true;
+            }
 
+            if(!theSame) return false;
+        }        
+        return true;
+    }
+    return false;
 }

@@ -15,7 +15,7 @@ int main(void)
     car4.addUpgrade(32);
 
     //car2.addUpgrade(10);
-    car3.addUpgrade(17);
+    //car3.addUpgrade(17);
 
     Car car5 = *car;
     car5 = car2+car4;
@@ -31,11 +31,18 @@ int main(void)
 
     std::cout << "Car 5: ";
     car5.showUpgrades();
-
     car5 = car2-car4;
 
     std::cout << "Car 5: ";
     car5.showUpgrades();
+
+    if(car3 == car2)
+    {
+        std::cout << "Car 2 and car2 are the same" << std::endl;
+    }else
+    {
+        std::cout << "Car 2 and car2 arent the same" << std::endl;
+    }
 
 
     std::cout << std::endl;
