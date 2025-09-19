@@ -11,6 +11,7 @@ class Truck : public Car
         int getBedLength();
         void setIsFullCab(bool cab);
         bool getIsFullCab();
+        friend std::ostream &operator<<(std::ostream &outs, const Truck &t);
 
     private:
         int _bedLength;

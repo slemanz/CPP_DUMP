@@ -11,6 +11,7 @@ class Suv : public Car
         int getNumSeats();
         void setIsAWD(bool awd);
         bool getIsAWD();
+        friend std::ostream &operator<<(std::ostream &outs, const Suv &s);
 
     private:
         int _numSeats;

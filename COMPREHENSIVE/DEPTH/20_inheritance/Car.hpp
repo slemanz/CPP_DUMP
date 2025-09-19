@@ -2,6 +2,7 @@
 #define INC_CAR_HPP
 
 #include <string>
+#include <iostream>
 
 class Car{
     public:
@@ -18,7 +19,7 @@ class Car{
         std::string getPaint();
 
     
-    private:
+    protected:
         int _fuel;
         std::string _paintColor;
         float _mileage;

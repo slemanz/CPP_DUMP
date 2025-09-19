@@ -7,7 +7,7 @@
 
 int main(void)
 {
-    std::cout << "Hello" << std::endl;
+    std::cout << std::endl;
 
     Car car;
     Truck truck;
@@ -27,6 +27,9 @@ int main(void)
     suv.setIsAWD(true);
 
     // create overloaded outputs operators for each class
+    std::cout << truck << std::endl;
+    std::cout << sedan << std::endl;
+    std::cout << suv << std::endl;
 
     return 0;
 }

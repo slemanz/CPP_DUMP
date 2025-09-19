@@ -11,6 +11,7 @@ class Sedan : public Car
         int getNumDoors();
         void setIsCompact(bool compact);
         bool getIsCompact();
+        friend std::ostream &operator<<(std::ostream &outs, const Sedan &s);
 
     private:
         int _numDoors;
