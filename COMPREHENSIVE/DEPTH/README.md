@@ -19,3 +19,4 @@
 17. **[Object Oriented Programming](17_oop/)**
 18. **[Destructors](18_destructors/)**
 19. **[Overload](19_overload/)**
+20. **[Inheritance](20_inheritance/)**
