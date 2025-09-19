@@ -3,6 +3,7 @@ INCLUDES += -I /
 
 SOURCES += main.cpp
 SOURCES += Car.cpp
+SOURCES += Truck.cpp
 
 all: run
 

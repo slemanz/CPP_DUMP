@@ -7,7 +7,6 @@ class Car{
     public:
         // member function
         Car();
-        Car(std::string paint, std::string brand, std::string model, int miles);
         ~Car();
 
         int showFuel();

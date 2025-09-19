@@ -1,28 +1,36 @@
 #include <iostream>
 #include "Car.hpp"
 
+Car::Car()
+{
+    _fuel = 0;
+    _paintColor = "white";
+    _mileage = 0.0;
+}
+
 int Car::showFuel()
 {
-    return 0;
+    return _fuel;
 }
 
 void Car::setFuel(int fuel)
 {
-
+    _fuel = fuel;
 }
 
 float Car::getOdometer()
 {
-
+    return _mileage;
 }
 
 void Car::setPaint(std::string color)
 {
-
+    _paintColor = color;
 }
 
 std::string Car::getPaint()
 {
+    return _paintColor;
 }
 
 Car::~Car()
