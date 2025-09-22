@@ -6,6 +6,11 @@ Truck::Truck()
     _isFullCab = false;
 }
 
+Truck::~Truck()
+{
+    std::cout << "Inside the Truck destructor!" << std::endl;
+}
+
 void Truck::setBedLength(int length)
 {
     _bedLength = length;

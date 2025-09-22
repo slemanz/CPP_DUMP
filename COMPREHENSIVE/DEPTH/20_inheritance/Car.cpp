@@ -35,5 +35,5 @@ std::string Car::getPaint()
 
 Car::~Car()
 {
-    std::cout << "Inside the destructor! Cleaning up." << std::endl;
+    std::cout << "Inside the Car destructor!" << std::endl;
 }

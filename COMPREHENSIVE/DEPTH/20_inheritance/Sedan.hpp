@@ -7,6 +7,7 @@ class Sedan : public Car
 {
     public:
         Sedan();
+        ~Sedan();
         void setNumDoors(int doors);
         int getNumDoors();
         void setIsCompact(bool compact);

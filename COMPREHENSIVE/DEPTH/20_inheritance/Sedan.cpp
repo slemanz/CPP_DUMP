@@ -6,6 +6,11 @@ Sedan::Sedan()
     _numDoors = 2;
 }
 
+Sedan::~Sedan()
+{
+    std::cout << "Inside the Sedan destructor!" << std::endl;
+}
+
 void Sedan::setNumDoors(int doors)
 {
     _numDoors = doors;

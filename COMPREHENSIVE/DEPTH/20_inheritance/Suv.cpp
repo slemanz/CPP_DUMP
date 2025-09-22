@@ -6,6 +6,11 @@ Suv::Suv()
     _numSeats = 5;
 }
 
+Suv::~Suv()
+{
+    std::cout << "Inside the Suv destructor!" << std::endl;
+}
+
 void Suv::setNumSeats(int seats)
 {
     _numSeats = seats;

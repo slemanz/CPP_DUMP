@@ -7,6 +7,7 @@ class Suv : public Car
 {
     public:
         Suv();
+        ~Suv();
         void setNumSeats(int seats);
         int getNumSeats();
         void setIsAWD(bool awd);

@@ -7,6 +7,7 @@ class Truck : public Car
 {
     public:
         Truck();
+        ~Truck();
         void setBedLength(int length);
         int getBedLength();
         void setIsFullCab(bool cab);
