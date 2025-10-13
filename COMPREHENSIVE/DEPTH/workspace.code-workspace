@@ -25,6 +25,9 @@
     "settings": {
         "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
         "C_Cpp.default.compilerPath": "g++",
+        "C_Cpp.default.includePath": [
+            "${workspaceFolder}/21_project2/shapes/Inc/"
+        ],
         "files.associations": {
             "iostream": "cpp",
             "array": "cpp",
