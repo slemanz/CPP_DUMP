@@ -57,3 +57,31 @@ void Triangle::setHeight(double height)
 {
     _height = height;
 }
+
+Triangle &Triangle::operator=(const Triangle &t)
+{
+    _base = t._base;
+    _height = t._height;
+    _hypotenuse = t._hypotenuse;
+    _area = t._area;
+    _color = t._color;
+    _x = t._x;
+    _y = t._y;
+    
+    return *this;
+}
+
+std::ostream &operator<<(std::ostream &outs, Triangle &t)
+{
+    t.CalculateHypotenuse();
+    t.calculateTriangleArea();
+
+    outs << "Triangle info:" << std::endl;
+    outs << "Color: " << t._color << std::endl;
+    outs << "Area: " << t._area << std::endl;
+    outs << "Base: " << t._base << std::endl;
+    outs << "Height: " << t._height << std::endl;
+    outs << "Side C length: " << t._hypotenuse << std::endl;
+    outs << "Position: " << "X:" << t._x << ", Y:" << t._y << std::endl;
+    return outs;
+}
