@@ -11,3 +11,32 @@ Circle::Circle(int x, int y, std::string color, double radius) : Shape(x, y, col
 
 Circle::Circle(const Circle &other) : Shape(other), _area(other._area), _diameter(other._diameter), _radius(other._radius){};
 
+double Circle::getCircleArea()
+{
+    return _area;
+}
+
+void Circle::calculateCircleArea()
+{
+    _area = M_PI * pow(_radius, 2);
+}
+
+double Circle::getDiameter()
+{
+    return _diameter;
+}
+
+double Circle::getRadius()
+{
+    return _radius;
+}
+
+double Circle::getCircumference()
+{
+    return 2*M_PI*_radius;
+}
+
+void Circle::setRadius(double radius)
+{
+    _radius = radius;
+}
