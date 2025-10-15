@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Shape.hpp"
 #include "Triangle.hpp"
+#include "Circle.hpp"
 
 int main(void)
 {
@@ -12,6 +13,9 @@ int main(void)
 
     Triangle triangle1(100, 200, "yellow", 2.5, 3.9);
     std::cout << triangle1 << std::endl;
+
+    Circle circle1(400, 345, "black", 3.3);
+    std::cout << circle1 << std::endl;
 
 
 

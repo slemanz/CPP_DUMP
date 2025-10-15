@@ -8,6 +8,7 @@ class Circle : public Shape {
     public:
         Circle();
         Circle(int x, int y, std::string color, double radius);
+        Circle(const Circle &other);
         Circle &operator=(const Circle &other);
         friend std::ostream &operator<<(std::ostream &outs, Circle &c);
         double getCircleArea();

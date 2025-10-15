@@ -40,3 +40,28 @@ void Circle::setRadius(double radius)
 {
     _radius = radius;
 }
+
+Circle &Circle::operator=(const Circle &c)
+{
+    _area = c._area;
+    _radius = c._radius;
+    _diameter = c._diameter;
+    _color = c._color;
+    _x = c._x;
+    _y = c._y;
+
+    return *this;
+}
+
+std::ostream &operator<<(std::ostream &outs, Circle &c)
+{
+    c.calculateCircleArea();
+    outs << "Circle info:" << std::endl;
+    outs << "Colocr: " << c._color << std::endl;
+    outs << "Area: " << c._area << std::endl;
+    outs << "Diameter: " << c._diameter << std::endl;
+    outs << "Radius: " << c._radius << std::endl;
+    outs << "Circumference: " << c.getCircumference() << std::endl;
+    outs << "Position: " << "X:" << c._x << ", Y:" << c._y << std::endl;
+    return outs;
+}
